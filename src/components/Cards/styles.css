@@ -1,0 +1,18 @@
+.cardComponent {
+  box-shadow: none !important;
+}
+
+.card-content {
+  display: none;
+}
+
+.cards-detail h5 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.cards-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

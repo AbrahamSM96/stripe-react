@@ -1,0 +1,10 @@
+.nav-wrapper {
+  background-color: #b2ebf2;
+}
+
+.nav-wrapper .material-icons {
+  color: #424242;
+}
+.brand-title {
+  font-family: 'Pacifico', cursive !important;
+}

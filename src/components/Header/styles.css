@@ -1,0 +1,16 @@
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.titles h2 {
+  font-family: 'Pacifico', cursive;
+  color: palevioletred;
+}
+
+.titles h5 {
+  color: palevioletred;
+}
