@@ -1,3 +1,8 @@
+.foooter {
+  position: absolute;
+  bottom: 0;
+}
+
 .page-footer {
   background-color: #b2ebf2 !important;
 }

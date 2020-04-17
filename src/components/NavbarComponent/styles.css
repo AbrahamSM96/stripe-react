@@ -6,5 +6,55 @@
   color: #424242;
 }
 .brand-title {
-  font-family: 'Pacifico', cursive !important;
+  font-family: "Pacifico", cursive !important;
+}
+
+.nav-extended .row {
+  display: none;
+}
+
+.tabs {
+  background-color: #b2ebf2 !important;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 35px !important;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs .tab {
+  display: inline-block;
+  text-align: center;
+  line-height: 35px !important;
+  height: 30px !important;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tabs .tab a {
+  font-weight: 600;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: rgba(146, 33, 39, 0) !important;
+  outline: none;
+}
+
+.tabs.tabs-transparent .tab a.active {
+  color: #424242 !important;
+}
+
+.tabs.tabs-transparent .tab a {
+  color: rgba(168, 168, 168, 0.7) !important;
+}
+
+.tabs.tabs-transparent .indicator {
+  background-color: #424242 !important;
 }

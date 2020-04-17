@@ -1,9 +1,13 @@
-.cardComponent {
+/* .cardComponent {
   box-shadow: none !important;
 }
 
 .card-content {
   display: none;
+} */
+
+.card {
+  border-radius: 25px !important;
 }
 
 .cards-detail h5 {
@@ -15,4 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.card-image {
+  width: 60%;
+}
+
+.wrapperImage {
+  display: flex;
+  justify-content: center;
 }

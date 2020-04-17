@@ -1,18 +1,18 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'app.bundle.js',
-    publicPath: '/',
+    path: path.resolve(__dirname, "dist"),
+    filename: "app.bundle.js",
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: "./public/index.html",
     }),
   ],
   module: {
@@ -21,25 +21,37 @@ module.exports = {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
+            presets: [
+              [
+                "@babel/preset-env",
+                {
+                  useBuiltIns: "usage",
+                  corejs: "2",
+                  targets: {
+                    browsers: ["last 2 versions", "ie >= 9"],
+                  },
+                },
+              ],
+              "@babel/preset-react",
+            ],
           },
         },
       },
       {
         test: /\.(png|svg|gif|jpg|jp(e*)g)$/,
         use: {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
             limit: 100000,
-            name: 'images/[hash]-[name].[ext]',
+            name: "images/[hash]-[name].[ext]",
           },
         },
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },

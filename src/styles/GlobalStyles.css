@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/public/fonts/Poppins-Black.ttf");
+  src: url("/public/fonts/Poppins-Italic.ttf");
+  src: url("/public/fonts/Poppins-BlackItalic.ttf");
+  src: url("/public/fonts/Poppins-Bold.ttf");
+  src: url("/public/fonts/Poppins-ExtraBoldItalic.ttf");
+  src: url("/public/fonts/Pacifico-Regular.ttf");
+}
+
 html {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 *,
@@ -30,11 +40,10 @@ button {
 }
 
 body {
-  background: #ffffff;
-  height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  background: #f6f6f6;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
-
   /* evita que haga rebotes el scroll */
   overscroll-behavior: none;
   width: 100%;

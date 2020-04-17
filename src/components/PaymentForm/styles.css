@@ -1,0 +1,64 @@
+label {
+  font-size: 1rem !important;
+  color: #424242 !important;
+}
+
+.formContainer {
+  margin: 0px 10%;
+}
+
+.form {
+  border: solid 2px #b2ebf2;
+  border-radius: 25px;
+  padding: 2%;
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.form__title {
+  display: flex;
+  justify-content: center;
+  color: #424242;
+  font-family: "Pacifico", cursive !important;
+  margin-bottom: 5%;
+}
+
+.form__details {
+  font-size: 16px;
+}
+
+.form__cardContainer {
+  padding: 1em 0px;
+  font-size: 16px;
+}
+
+.form__cardContainer-cexpira {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 3%;
+}
+
+.form__cardContainer-card {
+  padding-bottom: 3%;
+}
+
+.cardExpiryElement {
+  margin-top: 2%;
+  color: #8d8c8c !important;
+}
+
+.cardNumberElement {
+  margin-top: 2%;
+  color: #8d8c8c !important;
+}
+
+.cardCVCElement {
+  margin-top: 2%;
+  color: #8d8c8c !important;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
